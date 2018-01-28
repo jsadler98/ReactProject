@@ -4,13 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-  "start": "yarn build && node index",
-  "start:client": "webpack-dev-server",
-  "start:server": "nodemon",
-  "build": "webpack -p",
-  "seed": "node db/seeds"
-},
-"dependencies": {
+    "start": "yarn build && node index",
+    "start:client": "webpack-dev-server",
+    "start:server": "nodemon",
+    "build": "webpack -p",
+    "seed": "node db/seeds"
+  },
+  "dependencies": {
     "axios": "^0.17.1",
     "bcrypt": "^1.0.3",
     "body-parser": "^1.18.1",
@@ -44,5 +44,7 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1"
-  }
+  },
+  "repository": "git@github.com:jsadler98/ReactProject.git",
+  "author": "jsadler98 <joshy.sadler@btinternet.com>"
 }
