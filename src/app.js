@@ -4,17 +4,15 @@ import { BrowserRouter as Router} from 'react-router-dom';
 
 import './scss/style.scss';
 
-import Routes from '.utility/Routes';
+import Routes from './components/utility/Routes';
 
 class App extends React.Component {
 
   render() {
     return (
       <Router>
-        <div className="container">
-          <main>
-            <Routes />
-          </main>
+        <div>
+          <Routes />
         </div>
       </Router>
     );

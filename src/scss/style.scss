@@ -1,10 +1,188 @@
 .Background {
   background-image: url(https://media.giphy.com/media/8wxieMlTxtNfi/giphy.gif);
- position: absolute;
- background-size: cover;
- top: 0;
- left: 0;
- bottom: 0;
- right: 0;
- z-index: -1;
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+$purp:#917F92;
+$dg: #08020A;
+$og: #270A2F ;
+
+.landingPage{
+
+  font-size:100px;
+  text-align:center;
+  text-shadow: -2px -2px 0 $purp,
+  2px -2px 0 $purp,
+  -2px  2px 0 $purp,
+  2px 2px 0 $purp,
+  6px 6px 0 $og,
+  10px 10px 0 $dg,
+  14px 14px 0 $purp,
+  18px 18px 0 $og,
+  22px 22px 0 $dg;
+
+  animation: tripy .33s infinite;
+  -webkit-animation: tripy .33s infinite;
+  &:after {
+    content:"WolfPool";
+  }
+}
+@keyframes tripy {
+
+  0% {
+    color: $purp;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $og,
+    10px 10px 0 $dg,
+    14px 14px 0 $purp,
+    18px 18px 0 $og,
+    22px 22px 0 $dg;
+  }
+
+  33% {
+    color: $og;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $dg,
+    10px 10px 0 $purp,
+    14px 14px 0 $og,
+    18px 18px 0 $dg,
+    22px 22px 0 $purp;
+  }
+
+  66% {
+    color: $dg;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $purp,
+    10px 10px 0 $og,
+    14px 14px 0 $dg,
+    18px 18px 0 $purp,
+    22px 22px 0 $og;
+  }
+
+  100% {
+    color: $purp;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $og,
+    10px 10px 0 $dg,
+    14px 14px 0 $purp,
+    18px 18px 0 $og,
+    22px 22px 0 $dg;
+  }
+
+}
+
+@-webkit-keyframes tripy {
+
+  0% {
+    color: $purp;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $og,
+    10px 10px 0 $dg,
+    14px 14px 0 $purp,
+    18px 18px 0 $og,
+    22px 22px 0 $dg;
+  }
+
+  33% {
+    color: $og;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $dg,
+    10px 10px 0 $purp,
+    14px 14px 0 $og,
+    18px 18px 0 $dg,
+    22px 22px 0 $purp;
+  }
+
+  66% {
+    color: $dg;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $purp,
+    10px 10px 0 $og,
+    14px 14px 0 $dg,
+    18px 18px 0 $purp,
+    22px 22px 0 $og;
+  }
+
+  100% {
+    color: $purp;
+
+    text-shadow: -2px -2px 0 $purp,
+    2px -2px 0 $purp,
+    -2px  2px 0 $purp,
+    2px 2px 0 $purp,
+    6px 6px 0 $og,
+    10px 10px 0 $dg,
+    14px 14px 0 $purp,
+    18px 18px 0 $og;
+
+  }
+
+}
+html {
+  font-family: 'Creepster', cursive;
+  background:$dg;
+}
+
+a {
+  position: fixed;
+  top: 50%;
+  left: 45%;
+  margin-top: -50px;
+  margin-left: -100px;
+  color:$og;
+  text-shadow: -2px -2px 0 $purp,
+  2px -2px 0 $purp,
+  -2px  2px 0 $purp,
+  2px 2px 0 $purp,
+  6px 6px 0 $og,
+  10px 10px 0 $dg,
+  14px 14px 0 $purp,
+  18px 18px 0 $og,
+  22px 22px 0 $dg;
+
+  animation: tripy .33s infinite;
+  -webkit-animation: tripy .33s infinite;
+
+  &:hover {
+    -webkit-animation:none;
+    text-shadow: none;
+    text-decoration:none;
+    color: $purp
+
+  }
 }
